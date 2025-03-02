@@ -3,13 +3,6 @@ import pandas as pd
 import os
 from io import BytesIO
 
-# Ensure openpyxl is available
-try:
-    import openpyxl
-except ImportError:
-    st.error("Missing dependency: 'openpyxl'. Install it using `pip install openpyxl`.")
-    st.stop()  # Stop execution if openpyxl is missing
-
 # **SET PAGE CONFIG - MUST BE FIRST**
 st.set_page_config(page_title="Data Sweeper", layout='wide')
 
